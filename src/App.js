@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+import { Books } from 'components/Books';
+import { Header } from 'components/Header';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <>
+      <Header />
+      <Books />
+    </>
+  );
+};
