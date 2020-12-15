@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ebd5e3;
 }
 
 code {
@@ -45,8 +46,10 @@ p {
   margin: 8px;
   padding: 10px;
   border: 1px solid #000;
+  border-radius: 6px;
   width: auto;
   word-break: break-all;
+  background: #fff;
 }
 
 .isbn-text {
@@ -71,5 +74,7 @@ p {
 
 .ratings-text {
   display: flex;
+  justify-content: space-between;
+  font-size: 14px;
   font-style: italic;
 }

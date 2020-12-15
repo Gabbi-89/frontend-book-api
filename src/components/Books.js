@@ -8,14 +8,13 @@ export const Books = () => {
     fetch(BOOKS_URL)
       .then(res => res.json())
       .then(json => {
-        setBooks(json.books)
-        console.log(json.numberOfBooks);
+        setBooks(json.limitedBooks)
       })
   }, []);
 
   return (
     <>
-      <p>{books.numberOfBooks}</p>
+      {/* <p>{books.numberOfBooks}</p> Does not work now... */}
       <section className="books-section">
         {books.map((book) => (
           <div key={book.bookID} className="book-wrapper">
@@ -24,7 +23,7 @@ export const Books = () => {
             <p className="author-text"><span className="author-label">Author(s):</span> {book.author.name}</p>
             <div className="ratings-text">
               <p>Average rating: {book.average_rating}</p>
-              <p>Number of reviews: </p>
+              <p>Number of reviews: {book.ratings_count}</p>
             </div>
           </div>
         ))}
