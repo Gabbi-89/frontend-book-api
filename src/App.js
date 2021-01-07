@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Books } from 'components/Books';
 import { Header } from 'components/Header';
+import { Books } from 'components/Books';
+import { Pages } from 'components/Pages';
 
 export const App = () => {
   return (
