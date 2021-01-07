@@ -30,6 +30,7 @@ export const Books = () => {
   } else {
     return (
       <>
+        <p className="page-text">{`Page ${pageNumber + 1} / 24`}</p>
         <section className="books-section">
           {books.map((book) => (
             <div key={book.bookID} className="book-wrapper">
@@ -43,8 +44,8 @@ export const Books = () => {
             </div>
           ))}
         </section>
+        <p className="page-text">{`Page ${pageNumber + 1} / 24`}</p>
         <div className="page-buttons-container">
-          <p>{`Page ${pageNumber + 1} / 24`}</p>
           <button type="button" onClick={movePreviousPage}>Previous Page</button>
           <button type="button" onClick={moveNextPage}>Next Page</button>
         </div>
