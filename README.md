@@ -12,5 +12,4 @@ This is a frontend page created for fetching the mongo-api with books I have cre
 
 ## View it Live
 
-Link to see the webpage live:
-
+Link to see the webpage live: https://500-books.netlify.app/
